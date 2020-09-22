@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MyTitle titleText="My Random Musings" subTitle="So Very Very Random"></MyTitle>
+    <DescriptorSection imageId=100 sectionTitle="A Thing I Saw" sectionText="It was just so thingy"></DescriptorSection>
+    <DescriptorSection imageId=101 sectionTitle="What is this?" sectionText="I just don't know!"></DescriptorSection>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyTitle from './components/MyTitle.vue'
+import DescriptorSection from './components/DescriptorSection.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyTitle,
+    DescriptorSection
   }
 }
 </script>
